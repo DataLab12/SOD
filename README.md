@@ -17,3 +17,24 @@ $ python -m pip install -e CenterNet2
 $ cd CenterNet2
 $ pip install -r requirements.txt
 ```
+
+
+## Citation
+
+If you find this project useful for your research, please use the following BibTeX entry.
+
+    @inproceedings{biswas2022small,
+    title={Small Object Difficulty (SOD) Modeling for Objects Detection in Satellite Images},
+    author={Biswas, Debojyoti and Te{\v{s}}i{\'c}, Jelena},
+    booktitle={2022 14th International Conference on Computational Intelligence and Communication Networks (CICN)},
+    pages={125--130},
+    year={2022},
+    organization={IEEE}
+    }
+    
+    @inproceedings{zhou2021probablistic,
+      title={Probabilistic two-stage detection},
+      author={Zhou, Xingyi and Koltun, Vladlen and Kr{\"a}henb{\"u}hl, Philipp},
+      booktitle={arXiv preprint arXiv:2103.07461},
+      year={2021}
+    }
