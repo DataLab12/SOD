@@ -1,7 +1,7 @@
 # SOD
 Small Object Detection feature extractor
 
-This repository is the implementation of the following two papers:
+This repository is the implementation of the following papers:
 
 1. [Small Object Difficulty (SOD) Modeling for Objects Detection in Satellite Images](https://ieeexplore.ieee.org/abstract/document/10008383)
 
