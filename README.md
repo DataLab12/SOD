@@ -18,6 +18,31 @@ $ cd CenterNet2
 $ pip install -r requirements.txt
 ```
 
+## Architecture
+
+![alt text](model_arch.png)
+
+
+## Instruction for feature extraction
+
+This repository can be used to extract and save features from any image dataset. We have ready training and validation files for DOTA, DIOR, Visdrone and Xview datasets. The files are under CenterNet2/projects/CenterNet2/. The feature extraction can be done in training and inference mode both. To run this repository the annotation for datasets should be prepared following the COCOJson format style. Please follow the following instructions for feature extraction.
+
+## Extraction in training process
+
+train_net_*.py allows you to train new model from strach.
+```bash
+$ cd /home/username/SOD/CenterNet2/projects/CenterNet2/
+$ python train_net_*.py select any for 
+$ python train_net_multi_datasets_UAV.py for Vsidrone to UAVDT dataset UDA training 
+```
+
+## Extraction in Validation process
+
+validation.py allows you to run inference on trained a model. User need to provide the annotations(COCO json format) and images
+```bash
+$ cd /home/username/SOD/CenterNet2/projects/CenterNet2
+$ python validation.py for all dataset inference
+```
 
 ## Citation
 
