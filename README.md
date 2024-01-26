@@ -23,27 +23,27 @@ $ pip install -r requirements.txt
 ![alt text](model_arch.png)
 
 
-## Instruction for feature extraction
+## Instructions for feature extraction
 
-This repository is robust to identify small objects and can be used to extract and save features from any image dataset. We have ready training and validation files for DOTA, DIOR, Visdrone and Xview datasets. The files are under CenterNet2/projects/CenterNet2/. We use HDF5 database to save the extracted feature. The default length for feature vector is 1024. The feature extraction can be done in training and inference mode both. To run this repository the annotation for datasets should be prepared following the COCOJson style format. Please follow the following instructions for feature extraction.
+This repository is robust to identify small objects and can be used to extract and save features from any image dataset. We have training and validation files for DOTA, DIOR, Visdrone, and Xview datasets. The files are under CenterNet2/projects/CenterNet2/. We use the HDF5 database to save the extracted feature. The default length for the feature vector is 1024. The feature extraction can be done in training and inference modes. To run this repository, the annotation for datasets should be prepared following the COCOJson style format. Please follow the following instructions for feature extraction.
 
-## Extraction in training process
+## Extraction in the training process
 
-train_net_*.py allows you to train new model from strach.
+train_net_*.py allows you to train a new model from scratch.
 ```bash
 $ cd /home/username/SOD/CenterNet2/projects/CenterNet2/
-$ python train_net_*.py select the corresponding training file for a specific dataset or modify for any custom dataset
+$ python train_net_*.py select the corresponding training file for a specific dataset or modify it for any custom dataset
 $ Set parameter cfg.SAVE_H5= True to save instance features
-$ Set parameter cfg.H5_SAVE_ITERATION= 5000, the number of interation after which you want to start saving feature 
+$ Set parameter cfg.H5_SAVE_ITERATION= 5000, the number of iterations after which you want to start saving the feature 
 ```
 
-## Extraction in Validation process
+## Extraction in the Validation process
 
-validation.py allows you to run inference on trained a model. User need to provide the annotations(COCO json format) and images
+validation.py allows you to run inference on a trained model. Users need to provide the annotations(COCO JSON format) and images
 ```bash
 $ cd /home/username/SOD/CenterNet2/projects/CenterNet2
 $ python validation.py for all dataset inference
-$ Set parameter cfg.SAVE_H5= True to save instance features \(It will immediately start saving features in H5 format without iteration delay)
+$ Set parameter cfg.SAVE_H5= True to save instance features (It will immediately start saving features in H5 format without any iteration delay)
 ```
 
 ## Citation
